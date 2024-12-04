@@ -59,6 +59,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
+CSRF_TRUSTED_ORIGINS = [
+    'https://mineportfolio-wvfa.onrender.com',
+]
 
 TEMPLATES = [
     {
@@ -116,6 +119,12 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
+
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'mineportfolio-wvfa.onrender.com',
+]
 
 
 
