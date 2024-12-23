@@ -83,6 +83,11 @@ def profile_edit(request):
     return JsonResponse({'status':'bad request'})
 
 
+def health_check(request):
+    return JsonResponse({"status": "ok"})
+
+
+
 @login_required()
 def messages(request):
     template_name = 'messages.html'

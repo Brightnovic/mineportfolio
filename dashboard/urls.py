@@ -9,6 +9,7 @@ from .views import (
     messages_api,
     projects,
     projects_api,
+    health_check,
     LoginView,
     EducationView,
     )
@@ -20,7 +21,7 @@ urlpatterns = [
 
     path('profile/', profile, name='profile'),
     path('profile/edit/', profile_edit, name='profile_edit'),
-
+    path('health-check/', health_check, name='health-check'),
     path('messages', messages, name='messages'),
     path('messages/api/', messages_api, name='messages_api'),
 
