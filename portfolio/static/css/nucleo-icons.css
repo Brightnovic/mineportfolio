@@ -33,6 +33,24 @@ License - nucleoapp.com/license/
   vertical-align: -15%;
 }
 
+
+
+.mypicdp{
+width: 100%;
+ position: absolute ;
+ top: 1.5rem;
+ align-items: center;
+display: flex;
+justify-content: center;
+ 
+height: 40px;
+}
+.picdiv{
+  height: 12rem !important;
+  background-color: #eeeeee;
+   border-radius: 50%;
+  width: 12rem;
+}
 .ni-2x {
   font-size: 2em;
 }
